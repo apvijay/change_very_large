@@ -2,39 +2,33 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../urapvr/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
   <title>A.P. Vijay Rengarajan | Efficient Change Detection for Very Large Motion Blurred Images</title>
 </head>
 
 <body>
   <div id="page">
       <h1><center>Efficient Change Detection for Very Large Motion Blurred Images</center></h1>   
-<table border="0" cellpadding="0" cellspacing="6">
-<tr>
-<td><img id="img-table" src="img/vlarge_contrib.png"></td>
-<td><img id="img-table" src="img/vlarge_eg1.png"></td>
-</tr>
-</table>
-<br><br><br>
+<br><br>
 
   <sec-title>Abstract</sec-title>
     <sec-contents>
       <p>
-We address the challenging problem
-of registration and change detection in very large motion
-blurred images. The unreasonable demand that this task
-puts on computational and memory resources precludes the
-possibility of any direct attempt at solving this problem. We
+We address the challenging problem of registration and change
+detection in very large motion blurred images. The unreasonable demand
+that this task puts on computational and memory resources precludes
+the possibility of any direct attempt at solving this problem. We
 address this issue by observing the fact that the camera motion
-experienced by a sufficiently large sub-image is approximately
-the same as that of the entire image itself. We devise an
-algorithm for judicious sub-image selection so that the camera
-motion can be deciphered correctly, irrespective of the presence
-or absence of occluder. We follow a reblur-difference frame-
-work to detect changes as this is an artifact-free pipeline unlike
-the traditional deblur-difference approach. We demonstrate the
-results of our algorithm on both synthetic and real data.
+experienced by a sufficiently large sub-image is approximately the
+same as that of the entire image itself. We devise an algorithm for
+judicious sub-image selection so that the camera motion can be
+deciphered correctly, irrespective of the presence or absence of
+occluder. We follow a reblur-difference framework to detect changes as
+this is an artifact-free pipeline unlike the traditional
+deblur-difference approach. We demonstrate the results of our
+algorithm on both synthetic and real data.
       </p><br><br>
     </sec-contents>
 
@@ -43,13 +37,46 @@ results of our algorithm on both synthetic and real data.
 
   <sec-title>Publication</sec-title>
 <sec-contents>
-          <h2>Efficient Change Detection for Very Large Motion Blurred Images</h2>
-          <p><i>Vijay Rengarajan</i>, Abhijith Punnappurath, A.N. Rajagopalan, and Guna Seetharaman<br><i>CVPR Workshop on Registration of Very Large Images,</i> Columbus, Ohio, USA <br>June 2014 <a href="../pdf/2014_cvprw.pdf">PDF</a>
+          <b>Efficient Change Detection for Very Large Motion Blurred Images</b>
+          <p><i>Vijay Rengarajan</i>, <a class="name" href="http://www.ee.iitm.ac.in/~ee10d038">Abhijith Punnappurath</a>, <a class="name" href="http://www.ee.iitm.ac.in/~raju">A.N. Rajagopalan</a>, and <a class="name" href="http://www.cacs.louisiana.edu/~guna/">Guna Seetharaman</a><br><i>CVPR Workshop on Registration of Very Large Images,</i> Columbus, Ohio, USA <br>June 2014<br>
+        <a href="../pdf/2014_cvprw.pdf">Paper</a> (3.7MB)<br>
+        <a href="../pdf/2014_cvprw_present.pdf">Slides</a> (3.1MB)
           </p><br>
         </sec-contents>
 
 <sec-contents></sec-contents>
 
+<sec-title>bibTeX</sec-title>
+<sec-contents>
+<code>
+@inproceedings{ rengarajan:2014:efficient,<br>
+author={Rengarajan, V. and Punnappurath, A. and Rajagopalan, A.N. and Seetharaman, G.},<br>
+booktitle={IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},<br>
+title={Efficient Change Detection for Very Large Motion Blurred Images},<br>
+year={2014},<br>
+pages={315-322},<br>
+doi={10.1109/CVPRW.2014.55},<br>
+month={June},<br>
+}
+</code><br><br><br>
+</sec-contents>
+
+<sec-contents></sec-contents>
+<sec-contents></sec-contents>
+
+<sec-title>Results</sec-title>
+<sec-contents><p>Given a reference image and a motion blur image
+having very large spatial dimensions, we estimate the camera poses
+that contribute to motion blur between the two images only from
+sub-images of smaller size, and simultaneously detect the regions of
+changes between them. </p>
+
+<table class="table_of_img_result">
+<tr>
+<td><img id="img_in_table_result" src="img/vlarge_eg1.png"></td>
+</tr>
+</table><br><br><br>
+</sec-contents>
 
 <br><br><br>
 
